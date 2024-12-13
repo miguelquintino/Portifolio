@@ -1,0 +1,33 @@
+
+========== Extrutura do Portifólio ==========
+
+---------- Início do Header ----------
+#Logo
+#Lista(Sobre, Habilidades, Projectos, Contactos)
+#Botoes(Modo light e Dark, hamburguer)
+---------- Fim do Header ----------
+
+---------- Início do Main ----------
+* Sessão Sobre 
+#Texto(Meu nome, e um paragrafo explicativo
+#Ver Habilidades
+#Uma foto minha ou de um avatar
+
+* Sessão Habilidades
+# Titulo -> Minhas Habilidades
+# Itens -> Html, css, javascript, php, sql
+
+* Sessão Projectos
+#card oculto(foto e uma descricao basica que vai sair de baixo com o link: ver Projecto)
+
+* Sessão Contactos
+#Formulario (Com o nome , email e mensagem)
+---------- Fim do Main ----------
+
+---------- Início do Footer ----------
+#Logo ou meu nome
+#links rapidos
+#Informações de contacto
+#Barra com as redes sociais
+---------- Fim do Footer ----------
+
