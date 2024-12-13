@@ -449,6 +449,15 @@ main section#projectos div.container div.projecto div.texto p.link a {
     text-decoration: 0;
 }
 
+@media (max-width: 700px) {
+    main section#projectos {
+        width: 90%;
+    }
+    main section#projectos div.container div.projecto {
+        width: 300px;
+    }
+}
+
 /* Fim da section projectos */
 
 /* Início da section contactos */
