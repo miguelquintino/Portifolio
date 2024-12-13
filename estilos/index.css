@@ -39,6 +39,15 @@ a#btnSubir.aparece {
     bottom: 50px;
     animation: crescer 0.5s infinite alternate ease-in-out;
 }
+@media (max-width: 700px) {
+    a#btnSubir.aparece {
+        right: 10px;
+        bottom: 10px;
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+    }
+}
 /* ========== Início do Header ==========*/
 header{
     width: 100%;
@@ -396,7 +405,7 @@ main section#projectos div.container {
 main section#projectos div.container div.projecto {
     border-radius: 20px;
     height: 450px;
-    width: 400px;
+    width: 350px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 10px var(--cor5);
@@ -458,7 +467,7 @@ section#contactos div.texto {
 }
 section#contactos div.texto h1 {
     color: var(--cor2);
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     transition: all 0.5s;
     margin: 20px 0;
