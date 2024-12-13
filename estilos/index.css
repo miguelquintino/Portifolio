@@ -230,7 +230,7 @@ main section#top div.foto img {
         flex-direction: column;
         padding: 10% 5% 0 5%;
         gap: 5px;
-        margin-bottom: 100px;
+        margin-bottom: 220px;
     }
     main section#top div.texto {
         width: 100%;
@@ -244,9 +244,10 @@ main section#top div.foto img {
 @media (max-width: 750px) {
     main section#top {
         margin: 0;
+        margin-bottom: 250px;
     }
     main section#top div.texto {
-        padding: 25% 5% 0 5%;
+        padding: 25% 5% 5% 5%;
     }
     main section#top div.texto h1{
         font-size: 40px;
