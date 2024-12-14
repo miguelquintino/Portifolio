@@ -4,7 +4,7 @@ const btn = document.getElementById('btnMenu')
 const lista = document.querySelector('header ul#lista')
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('body a[href^="#"]')
-const menuItens = document.querySelectorAll('body header a[href^="#"]')
+const menuItens = document.querySelectorAll('body header a[href^="#"], section#top a')
 let btnSubir = document.querySelector("a#btnSubir")
 
 btn.addEventListener('click', function() {

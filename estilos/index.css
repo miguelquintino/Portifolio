@@ -51,7 +51,7 @@ a#btnSubir.aparece {
 /* ========== Início do Header ==========*/
 header{
     width: 100%;
-    height: 90px;
+    height: 85px;
     background-color: #fff;
     position: fixed;
     top: 0;
@@ -81,7 +81,6 @@ header nav div#logo a{
 header nav ul{
     display: flex;
     list-style: none;
-    font-size: 25px;
 }
 
 header nav ul li{
@@ -89,7 +88,7 @@ header nav ul li{
 }
 
 header nav ul a{
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--cor3);
     font-weight: 700;
@@ -184,8 +183,7 @@ header nav button.ativar span.linha:nth-child(3){
 /* ========== Início do Main ==========*/
 /* Inicio da section top  */
 main section#top{
-    height: 100vh;
-    min-height: 200px;
+    min-height: 100vh;
     max-height: 900px;
     width: 100%;
     display: flex;
@@ -203,19 +201,36 @@ main section#top div.texto{
 }
 
 main section#top div.texto h1{
-    font-size: 60px;
+    font-size: 50px;
     color: var(--cor3);
     letter-spacing: 1px;
 }
 
 main section#top div.texto h2 {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 25px;
     color: var(--cor2);
 }
 
 main section#top div.texto p{
+    font-size: 18px;
+    color: var(--cor1);
+}
+
+main section#top div.texto a{
+    text-decoration: none;
+    border: 2px solid var(--cor3);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
     font-size: 20px;
+    background-color: var(--cor3);
+    transition: .2s;
+}
+
+main section#top div.texto a:hover {
+    background-color: transparent;
     color: var(--cor1);
 }
 
@@ -253,22 +268,22 @@ main section#top div.foto img {
 @media (max-width: 750px) {
     main section#top {
         margin: 0;
-        margin-bottom: 250px;
+        margin-bottom: 200px;
     }
     main section#top div.texto {
         padding: 25% 5% 5% 5%;
     }
     main section#top div.texto h1{
-        font-size: 40px;
+        font-size: 35px;
         margin-bottom: 1px;
     }
     
     main section#top div.texto h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     main section#top div.texto p{
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 @media (min-width: 800px) {
@@ -287,7 +302,7 @@ main section#habilidades {
 main section#habilidades h1 {
     text-align: center;
     margin: 30px 0 20px 0;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--cor3);
 }
 
@@ -391,9 +406,9 @@ main section#projectos {
 /* Inicio da section projectos */
 main section#projectos h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--cor3);
-    margin: 20px 0;
+    margin: 20px 0 30px 0;
 }
 
 main section#projectos div.container {
@@ -404,12 +419,13 @@ main section#projectos div.container {
 }
 main section#projectos div.container div.projecto {
     border-radius: 20px;
-    height: 450px;
+    height: 400px;
     width: 350px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 10px var(--cor5);
     transform: scale(0.8);
+    padding: 0 0 10px 0;
 }
 main section#projectos.revela div.container div.projecto {
     animation: crescer 1s ease-in-out forwards;
@@ -476,10 +492,10 @@ section#contactos div.texto {
 }
 section#contactos div.texto h1 {
     color: var(--cor2);
-    font-size: 35px;
+    font-size: 28px;
     text-align: center;
     transition: all 0.5s;
-    margin: 20px 0;
+    margin: 10px 0 30px 0;
 }
 section#contactos.revela div.texto h1 {
     margin: 5px 0;
@@ -487,6 +503,7 @@ section#contactos.revela div.texto h1 {
 section#contactos div.texto p {
     text-align: center;
     padding: 20px;
+    font-size: 15px;
 }
 
 section#contactos form {
@@ -499,7 +516,7 @@ section#contactos form {
 section#contactos form h2 {
     margin: 20px 0 10px 0;
     color: var(--cor2);
-    font-size: 28px;
+    font-size: 25px;
 }
 section#contactos form textarea, section#contactos form input {
     width: 70%;
@@ -536,7 +553,7 @@ section#contactos form button:hover {
         width: 100%;
     }
     section#contactos form textarea, section#contactos form input, section#contactos form button {
-        width: 80%;
+        width: 90%;
     }
 }
 /* Fim da section contactos */
@@ -548,7 +565,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: var(--cor5);
-    padding: 30px 0;
+    padding: 30px 0 40px 0;
+    gap: 10px;
 }
 
 footer h2 {
@@ -561,14 +579,14 @@ footer h2 {
 footer a {
     text-decoration: none;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     text-align: center;
-    margin: 10px 5px;
+    margin: 7px 5px;
 }
 
 footer a:hover {
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 footer section#logo {
@@ -596,6 +614,9 @@ footer section#infoContacto div.social {
 footer section#infoContacto div.social a {
     font-size: 1.7em;
 }
+footer section#infoContacto div.social a:hover {
+    transform: scale(1.2);
+}
 .bi-facebook {
     color: blue;
 }
@@ -614,6 +635,9 @@ footer section#infoContacto div.social a {
 @media (max-width: 500px) {
     footer section {
         width: 100%;
+    }
+    footer a {
+        font-size: 15px;
     }
 }
 /* ========== Fim do Footer ==========*/
