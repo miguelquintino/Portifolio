@@ -39,6 +39,9 @@ a#btnSubir.aparece {
     bottom: 50px;
     animation: crescer 0.5s infinite alternate ease-in-out;
 }
+body {
+    background-color: #fff;
+}
 @media (max-width: 700px) {
     a#btnSubir.aparece {
         right: 10px;
