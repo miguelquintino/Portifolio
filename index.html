@@ -14,7 +14,7 @@
     
 <header>
     <nav>
-        <div id="logo"><a href="#">M.U</a></div>
+        <div id="logo"><a href="#top">M.U</a></div>
         
         <ul id="lista">
             <li><a href="#top" class="ativo">Sobre</a></li>
@@ -91,60 +91,58 @@
         <div class="container">
             <div class="projecto">
                 <div class="foto">
-                    <img src="./imagens/188449555.png" alt="foto">
+                    <a href="https://plusone-llc.github.io/PlusOne/" target="_blank"><img src="./imagens/projetos/plusone.jpg" alt="foto"></a>
                 </div>
                 <div class="texto">
-                    <h2>Nome do projecto</h2>
+                    <h2>PlusOne</h2>
                     <p class="status">Estado: <b class="disponivel">Disponível</b></p>
-                    <p class="link"><a href="#">Visitar projecto</a></p>
+                    <p class="link"><a href="https://plusone-llc.github.io/PlusOne/" target="_blank" >Visitar projecto</a></p>
                 </div>
             </div>
             <div class="projecto">
                 <div class="foto">
-                    <img src="./imagens/man-working-with-com.jpg" alt="foto">
+                    <a href="https://plusone-llc.github.io/AECME/" target="_blank"><img src="./imagens/projetos/aecme.jpg" alt="foto"></a>
                 </div>
                 <div class="texto">
-                    <h2>Nome do projecto</h2>
+                    <h2>AECME</h2>
+                    <p class="status">Estado: <b class="disponivel">Disponível</b></p>
+                    <p class="link"><a href="https://plusone-llc.github.io/AECME/" target="_blank" >Visitar projecto</a></p>
+                </div>
+            </div>
+            <div class="projecto">
+                <div class="foto">
+                    <img src="./imagens/projetos/cantinho.jpg" alt="foto">
+                </div>
+                <div class="texto">
+                    <h2>Cantinho dos livros</h2>
                     <p class="status">Estado: <b class="indisponivel">Indisponível</b></p>
                 </div>
             </div>
             <div class="projecto">
                 <div class="foto">
-                    <img src="./imagens/188449555.png" alt="foto">
+                    <img src="./imagens/projetos/agrolink.jpg" alt="foto">
                 </div>
                 <div class="texto">
-                    <h2>Nome do projecto</h2>
-                    <p class="status">Estado: <b class="disponivel">Disponível</b></p>
-                    <p class="link"><a href="#">Visitar projecto</a></p>
-                </div>
-            </div>
-            <div class="projecto">
-                <div class="foto">
-                    <img src="./imagens/man-working-with-com.jpg" alt="foto">
-                </div>
-                <div class="texto">
-                    <h2>Nome do projecto</h2>
+                    <h2>AgroLink</h2>
                     <p class="status">Estado: <b class="indisponivel">Indisponível</b></p>
                 </div>
             </div>
             <div class="projecto">
                 <div class="foto">
-                    <img src="./imagens/188449555.png" alt="foto">
+                    <img src="./imagens/projetos/natour.jpg" alt="foto">
                 </div>
                 <div class="texto">
-                    <h2>Nome do projecto</h2>
-                    <p class="status">Estado: <b class="disponivel">Disponível</b></p>
-                    <p class="link"><a href="#">Visitar projecto</a></p>
+                    <h2>NaTour Angola</h2>
+                    <p class="status">Estado: <b class="indisponivel">Indisponível</b></p>
                 </div>
             </div>
             <div class="projecto">
                 <div class="foto">
-                    <img src="./imagens/man-working-with-com.jpg" alt="foto">
+                    <img src="./imagens/projetos/lubtravel.jpg" alt="foto">
                 </div>
                 <div class="texto">
-                    <h2>Nome do projecto</h2>
-                    <p class="status">Estado: <b class="disponivel">Disponível</b></p>
-                    <p class="link"><a href="#">Visitar projecto</a></p>
+                    <h2>LubTravel</h2>
+                    <p class="status">Estado: <b class="indisponivel">Indisponível</b></p>
                 </div>
             </div>
         </div>
@@ -152,13 +150,11 @@
     
     <section id="contactos">
         <div class="texto">
-            <h1>Entre em contacto</h1>
-            <p>Esse é um dos principais pontos que eu acho importante visto que faz parte do homem e do pensamento racional que tem haver com a sua geração de emprego em um contexto social! </p>
+            <h1>Entre em contacto pelo WhatsApp</h1>
+            <img height="200px" src="imagens/contact.svg" alt="">
         </div>
-        <form method="POST">
-            <h2>Envie uma mensagem! </h2>
-            <input type="text" name="nome" id="nome" placeholder="Nome Completo">
-            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+        <form method="POST" onsubmit="enviarWhatsApp(event)">
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
             <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
             <button type="submit" name="btnEnviarM" id="btnEnviarM">Enviar</button>
         </form>
@@ -166,18 +162,25 @@
 </main> 
 
 <footer>
-    <section id="logo">
-        <a href="#">M.U</a>
+    
+    <section id="info">
+        <h2>Miguel Ucuepandi </h2>
+        <p></p>
+        <div class="social">
+            <a target="_blank" href="https://www.facebook.com/mi.kel.son07"><i class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://github.com/miguelquintino"><i class="bi bi-github"></i></a>
+            <a target="_blank" href="https://www.instagram.com/miguel.ucuepandi/profilecard/?igsh=Z2thMDg5MHM2OTFq"><i class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/miguel-ucuepandi-013062304/"><i class="bi bi-linkedin"></i></a>
+            <a target="_blank" href="https://wa.me/qr/IKAJQ4G4RDIII1"><i class="bi bi-whatsapp"></i></a>
+        </div>
     </section>
     
     <section id="linksR">
-        <h2>Links Rápidos</h2>
+        <h2>Outros Serviços</h2>
         <ul>
-            <li><a href="#top">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projectos">Projectos</a></li>
-            <li><a href="#contactos">Contactos</a></li>
-            <li><a href="LICENSE">Copyright (c) 2024 Miguel Ucuepandi </a></li>
+            <li><a href="#">Desenvolvimento front-end</a></li>
+            <li><a href="#">Desenvolvimento back-end</a></li>
+            <li><a href="#">Desenvolvimento full-stack</a></li>
         </ul>
     </section>
     
@@ -189,17 +192,15 @@
            <a href="mailto:miguelucuepandi07@gmail.com"><i class="bi bi-envelope"></i> miguelucuepandi07@gmail.com</a>
            <a href="mailto:miguel.ucuepandi@gmail.com"><i class="bi bi-envelope"></i> miguel.ucuepandi@gmail.com</a> 
         </div>
-        <div class="social">
-            <a target="_blank" href="https://www.facebook.com/mi.kel.son07"><i class="bi bi-facebook"></i></a>
-            <a target="_blank"  href="https://github.com/miguelquintino"><i class="bi bi-github"></i></a>
-            <a target="_blank"  href="https://www.instagram.com/miguel.ucuepandi/profilecard/?igsh=Z2thMDg5MHM2OTFq"><i class="bi bi-instagram"></i></a>
-            <a target="_blank"  href="https://www.linkedin.com/in/miguel-ucuepandi-013062304/"><i class="bi bi-linkedin"></i></a>
-            <a target="_blank"  href="https://wa.me/qr/IKAJQ4G4RDIII1"><i class="bi bi-whatsapp"></i></a>
-        </div>
+    </section>
+    
+    <section id="baixo">
+        <p><a href="https://plusone-llc.github.io/AECME/" target="_blank" >PlusOne 2025 &copy; Todos os direitos reservados.</a></p>
     </section>
 </footer>
     
     <!-- Javascript-->
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/mensagem.js"></script>
 </body>
 </html61
